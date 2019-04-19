@@ -153,6 +153,7 @@ namespace cabba { namespace filesystem {
             if (str[i] == '.')
             {
                 start_ext = true;
+                ext.clear(); // Reset extension
             }
         }
         char* newStr = new char[ext.size() + 1];
